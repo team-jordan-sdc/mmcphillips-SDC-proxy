@@ -1,0 +1,10 @@
+version: '3'
+services:
+  moodu-proxy:
+    build:
+      context: .
+    image: moodu-proxy:latest
+    container_name: moodu-proxy
+    ports:
+    - "8000:8000"
+
