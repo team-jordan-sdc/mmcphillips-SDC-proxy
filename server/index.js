@@ -49,11 +49,10 @@ app.use(express.json());
 // });
 
 app.get('/api/featured', (req, res) => {
-  let id = req.query.id;
-  fetch(`${process.env.SERVICE_URL}${id}`)
+  fetch(`${process.env.SERVICE_URL}${req.query.id}`)
   .then(fres => fres.json())
-  .then((fres) => {
-    res.status(200).send(fres)
+  .then(fres =>  {
+    res.status(200).send(fres);
   });
 });
 

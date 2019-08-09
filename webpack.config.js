@@ -7,7 +7,7 @@ module.exports = {
   //entry: `${SRC_DIR}/index.jsx`,
   entry: {
     vendor: ['styled-components'],
-    featured: '../FeaturedFilm/client/src/index.jsx'
+    // featured: '../FeaturedFilm/client/src/index.jsx'
     // cast: '../cast-and-crew/client/src/index.js',
     // review: '../reviews/client/src/index.jsx',
   },
